@@ -1,0 +1,38 @@
+# =========================
+# Node / TS / JS
+# =========================
+node_modules/
+dist/
+build/
+out/
+
+# =========================
+# TypeScript
+# =========================
+*.tsbuildinfo
+
+# =========================
+# Logs
+# =========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# =========================
+# VS Code (safe)
+# =========================
+.vscode/
+!.vscode/extensions.json
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Environment files
+# =========================
+.env
+.env.*
