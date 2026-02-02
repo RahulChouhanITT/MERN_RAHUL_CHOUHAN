@@ -1,10 +1,4 @@
-import type { Task } from "../types/task.types";
-
-interface TaskItemProps {
-  task: Task;
-  onToggleTask: (taskId: number) => void;
-  onDeleteTask: (taskId: number) => void;
-}
+import type { TaskItemProps } from "../../utils/interfaces/task.interface";
 
 export function TaskItem({ task, onToggleTask, onDeleteTask }: TaskItemProps) {
   return (

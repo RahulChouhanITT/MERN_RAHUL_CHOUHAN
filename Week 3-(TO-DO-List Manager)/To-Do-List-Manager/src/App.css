@@ -20,6 +20,7 @@
   align-items: center;  
   flex-wrap: wrap; 
   flex-direction: column; 
+
 }
 
 .app-container-class {
@@ -186,6 +187,6 @@
 
 .task-footer-class {
   text-align: center;
-  margin-top: 1rem;
   font-weight: bold;
 }
+

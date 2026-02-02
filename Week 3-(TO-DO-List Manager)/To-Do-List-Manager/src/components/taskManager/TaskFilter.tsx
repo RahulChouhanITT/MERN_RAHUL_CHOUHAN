@@ -1,8 +1,5 @@
-import { TaskFilter } from "../types/task.types";
-
-interface TaskFilterProps {
-  onFilterChange: (filter: TaskFilter) => void;
-}
+import type { TaskFilterProps } from "../../utils/interfaces/task.interface";
+import { TaskFilter } from "../../utils/types/task.types";
 
 export function TaskFilterButtons({ onFilterChange }: TaskFilterProps) {
   return (

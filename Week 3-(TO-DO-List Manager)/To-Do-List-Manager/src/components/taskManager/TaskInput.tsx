@@ -1,14 +1,12 @@
 import { useState } from "react";
-
-interface TaskInputProps {
-  onAddTask: (title: string, dueDate: string) => void;
-}
+import type { TaskInputProps } from "../../utils/interfaces/task.interface";
+import { emptyString, ErrorState } from "../../utils/labels/constants";
 
 export function TaskInput({ onAddTask }: TaskInputProps) {
-  const [title, setTitle] = useState("");
-  const [dueDate, setDueDate] = useState("");
-  const [titleError, setTitleError] = useState(false);
-  const [dateError, setDateError] = useState(false);
+  const [title, setTitle] = useState(emptyString);
+  const [dueDate, setDueDate] = useState(emptyString);
+  const [titleError, setTitleError] = useState(ErrorState);
+  const [dateError, setDateError] = useState(ErrorState);
 
   function handleAdd(): void {
      let valid = true;
@@ -26,10 +24,10 @@ export function TaskInput({ onAddTask }: TaskInputProps) {
      if (!valid) return;
 
      onAddTask(title, dueDate);
-     setTitle("");
-     setDueDate("");
-     setTitleError(false);
-     setDateError(false);
+     setTitle(emptyString);
+     setDueDate(emptyString);
+     setTitleError(ErrorState);
+     setDateError(ErrorState);
   }
 
   return (
@@ -38,8 +36,8 @@ export function TaskInput({ onAddTask }: TaskInputProps) {
          type="text"
          value={title}
          placeholder={titleError ? "Title is required" : "Enter task title"}
-         onChange={(e) => {
-           setTitle(e.target.value);
+         onChange={(event) => {
+           setTitle(event.target.value);
            setTitleError(false);
            }
          }
@@ -48,8 +46,8 @@ export function TaskInput({ onAddTask }: TaskInputProps) {
       <input
          type="date"
          value={dueDate}
-         onChange={(e) => {
-           setDueDate(e.target.value);
+         onChange={(event) => {
+           setDueDate(event.target.value);
            setDateError(false);
            }
          }

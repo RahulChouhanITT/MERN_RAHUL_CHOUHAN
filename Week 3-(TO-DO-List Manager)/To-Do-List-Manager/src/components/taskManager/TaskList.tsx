@@ -1,11 +1,5 @@
-import type { Task } from "../types/task.types";
+import type { TaskListProps } from "../../utils/interfaces/task.interface.ts";
 import { TaskItem } from "./TaskItem.tsx";
-
-interface TaskListProps {
-  tasks: Task[];
-  onToggleTask: (taskId: number) => void;
-  onDeleteTask: (taskId: number) => void;
-}
 
 export function TaskList({ tasks, onToggleTask, onDeleteTask }: TaskListProps) {
   return (

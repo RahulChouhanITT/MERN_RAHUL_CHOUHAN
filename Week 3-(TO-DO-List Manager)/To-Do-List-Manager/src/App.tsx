@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import  { type Task, TaskFilter } from "./types/task.types";
-import { TaskInput } from "./components/TaskInput";
-import { TaskFilterButtons } from "./components/TaskFilter";
-import { TaskList } from "./components/TaskList";
+import  { type Task, TaskFilter } from "./utils/types/task.types";
+import { TaskInput } from "./components/taskManager/TaskInput";
+import { TaskFilterButtons } from "./components/taskManager/TaskFilter";
+import { TaskList } from "./components/taskManager/TaskList";
 import './App.css';
 
 const TASKS_STORAGE_KEY = "TASKS_STORAGE_KEY";
@@ -32,22 +32,22 @@ export function App() {
   );
 
   function addTask(title: string, dueDate: string): void {
-    setTasks(prev => [
-      ...prev,
+    setTasks(prevTaskList => [
+      ...prevTaskList,
       { id: Date.now(), title, dueDate, completed: false },
     ]);
   }
 
   function toggleTask(taskId: number): void {
-    setTasks(prev =>
-      prev.map(task =>
+    setTasks(prevTask =>
+      prevTask.map(task =>
         task.id === taskId ? { ...task, completed: !task.completed } : task
       )
     );
   }
 
   function deleteTask(taskId: number): void {
-    setTasks(prev => prev.filter(task => task.id !== taskId));
+    setTasks(prevTaskList => prevTaskList.filter(task => task.id !== taskId));
   }
 
   return (
