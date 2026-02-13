@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     equalsButton.addEventListener("click", () => {
         try {
             displayInput.value = eval(displayInput.value);
+             console.log(eval(displayInput.value));
         } catch {
             displayInput.value = "Error";
         }

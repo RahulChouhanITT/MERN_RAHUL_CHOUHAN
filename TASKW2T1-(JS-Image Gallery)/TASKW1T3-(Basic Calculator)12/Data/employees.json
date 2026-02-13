@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Mehta",
+    "designation": "Frontend Developer",
+    "experience": "2 Years",
+    "project": "Employee Portal",
+    "image": "employee_images/employee_1.png"
+  },
+  {
+    "id": 2,
+    "name": "Priya Sharma",
+    "designation": "UI/UX Designer",
+    "experience": "3 Years",
+    "project": "Design System Revamp",
+    "image": "employee_images/employee_2.png"
+  },
+  {
+    "id": 3,
+    "name": "Rohan Verma ",
+    "designation": "Backend Developer",
+    "experience": "4 Years",
+    "project": "API Optimization",
+    "image": "employee_images/employee_3.png"
+  },
+  {
+    "id": 4,
+    "name": "Neha Kapoor",
+    "designation": "Full Stack Developer",
+    "experience": "5 Years",
+    "project": "Internal Tools",
+    "image": "employee_images/employee_4.png"
+  },
+  {
+    "id": 5,
+    "name": "Kunal Singh",
+    "designation": "Project Manager",
+    "experience": "6 Years",
+    "project": "Agile Transformation",
+    "image": "employee_images/employee_5.png"
+  },
+  {
+    "id": 6,
+    "name": "Ananya Rao",
+    "designation": "Data Analyst",
+    "experience": "2 Years",
+    "project": "Business Insights Dashboard",
+    "image": "employee_images/employee_6.png"
+  },
+  {
+    "id": 7,
+    "name": "Vikram Patel",
+    "designation": "DevOps Engineer",
+    "experience": "4 Years",
+    "project": "CI/CD Pipeline Automation",
+    "image": "employee_images/employee_7.png"
+  },
+  {
+    "id": 8,
+    "name": "Sneha Iyer",
+    "designation": "QA Engineer",
+    "experience": "3 Years",
+    "project": "Automation Testing Suite",
+    "image": "employee_images/employee_8.png"
+  },
+  {
+    "id": 9,
+    "name": "Arjun Malhotra",
+    "designation": "Cloud Architect",
+    "experience": "7 Years",
+    "project": "Cloud Migration Strategy",
+    "image": "employee_images/employee_10.png"
+  },
+  {
+    "id": 10,
+    "name": "Pooja Nair",
+    "designation": "Business Analyst",
+    "experience": "5 Years",
+    "project": "Process Optimization",
+    "image": "employee_images/employee_9.png"
+  }
+]
+ 
