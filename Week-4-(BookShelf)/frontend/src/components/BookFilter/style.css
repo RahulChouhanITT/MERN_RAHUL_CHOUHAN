@@ -1,0 +1,22 @@
+.book-filters {
+  width: 80%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+ align-items: center;
+  padding: 1rem 0;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.filter-label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #374151;
+}
